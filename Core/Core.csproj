@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Concrete\" />
+    <None Remove="Abstract\" />
+    <None Remove="Entities\" />
+    <None Remove="DataAccess\" />
+    <None Remove="DataAccess\EntitiyFramework\" />
+    <None Remove="Utilities\" />
+    <None Remove="Utilities\Results\" />
+    <None Remove="Entities\Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+    <Folder Include="Abstract\" />
+    <Folder Include="Entities\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="DataAccess\EntitiyFramework\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Utilities\Results\" />
+    <Folder Include="Entities\Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.0" />
+  </ItemGroup>
+</Project>

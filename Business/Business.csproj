@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Concrete\" />
+    <None Remove="Abstract\" />
+    <None Remove="Contants\" />
+    <None Remove="DependencyResolvers\" />
+    <None Remove="DependencyResolvers\Autofac\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+    <Folder Include="Abstract\" />
+    <Folder Include="Contants\" />
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="DependencyResolvers\Autofac\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entities.csproj" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
+  </ItemGroup>
+</Project>
